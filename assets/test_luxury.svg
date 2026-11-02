@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" width="200" height="220">
+  <defs>
+    <!-- Metallic Liquid Gold Gradient -->
+    <linearGradient id="goldLuxury" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF7" />
+      <stop offset="20%" stop-color="#F2D184" />
+      <stop offset="45%" stop-color="#D4A346" />
+      <stop offset="70%" stop-color="#9E6E1D" />
+      <stop offset="90%" stop-color="#D9A94E" />
+      <stop offset="100%" stop-color="#FCE1A2" />
+    </linearGradient>
+
+    <!-- Deep Bronze Obsidian Accent -->
+    <linearGradient id="obsidianLuxury" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A1817" />
+      <stop offset="50%" stop-color="#2D2824" />
+      <stop offset="100%" stop-color="#121110" />
+    </linearGradient>
+
+    <!-- Bevel Inner Light Edge -->
+    <linearGradient id="bevelLight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#F2D184" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Tapered Wave Gradient 1 -->
+    <linearGradient id="waveGradOuter" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4A346" stop-opacity="0" />
+      <stop offset="25%" stop-color="#D4A346" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#FFF3D6" stop-opacity="0.95" />
+      <stop offset="75%" stop-color="#D4A346" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#D4A346" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="waveGradMid" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C59B27" stop-opacity="0" />
+      <stop offset="20%" stop-color="#C59B27" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#FFFDF7" stop-opacity="1" />
+      <stop offset="80%" stop-color="#C59B27" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#C59B27" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="waveGradInner" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9E6E1D" stop-opacity="0" />
+      <stop offset="20%" stop-color="#D4A346" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#FFFDF7" stop-opacity="1" />
+      <stop offset="80%" stop-color="#D4A346" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#9E6E1D" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Group centered at (100, 110) -->
+  <g>
+    <!-- ACOUSTIC SOUND CROWN (Tapered, glowing sonic ripples radiating from top) -->
+    <!-- Wave 3: Outer Horizon Arc -->
+    <path d="M 24 22 C 50 -10 150 -10 176 22" 
+          stroke="url(#waveGradOuter)" 
+          stroke-width="2.5" 
+          stroke-linecap="round" 
+          fill="none" />
+    <circle cx="100" cy="5" r="1.5" fill="#D4A346" opacity="0.6" />
+
+    <!-- Wave 2: Middle Harmonic Arc -->
+    <path d="M 42 36 C 62 10 138 10 158 36" 
+          stroke="url(#waveGradMid)" 
+          stroke-width="3.5" 
+          stroke-linecap="round" 
+          fill="none" />
+    <circle cx="100" cy="22" r="2" fill="#F2D184" opacity="0.85" />
+
+    <!-- Wave 1: Core Acoustic Resonance Arc -->
+    <path d="M 62 50 C 76 30 124 30 138 50" 
+          stroke="url(#waveGradInner)" 
+          stroke-width="4.5" 
+          stroke-linecap="round" 
+          fill="none" />
+    
+    <!-- Focal Acoustic Beacon (Gold Diamond / Node) -->
+    <path d="M 100 38 L 103 42 L 100 46 L 97 42 Z" fill="#FFFDF7" />
+
+    <!-- MASTER LUXURY 'S' (Sculpted High-Contrast Dual-Facet Monogram) -->
+    <!-- Primary Facet: Deep Obsidian Core with Gold Outline -->
+    <!-- Outer sculpted S ribbon with dramatic calligraphic sweep -->
+    <path d="M 136 86 
+             C 136 68 120 54 98 54 
+             C 72 54 54 70 54 90 
+             C 54 118 146 112 146 156 
+             C 146 186 122 202 96 202 
+             C 70 202 50 188 46 166 
+             L 64 162 
+             C 66 176 78 186 96 186 
+             C 112 186 128 174 128 156 
+             C 128 124 36 132 36 90 
+             C 36 60 62 38 98 38 
+             C 128 38 152 56 154 84 
+             Z" 
+          fill="url(#obsidianLuxury)" 
+          stroke="url(#goldLuxury)" 
+          stroke-width="1.8" />
+
+    <!-- Golden Spine Ribbon (Fluid Inner Core that gleams in luxury gold) -->
+    <path d="M 134 84 
+             C 134 66 118 52 98 52 
+             C 76 52 58 66 58 88 
+             C 58 112 142 110 142 154 
+             C 142 180 120 196 96 196 
+             C 74 196 56 184 50 166" 
+          stroke="url(#goldLuxury)" 
+          stroke-width="6.5" 
+          stroke-linecap="round" 
+          fill="none" />
+
+    <!-- Polished Platinum/Gold Light Reflex (Chiseled bevel reflection) -->
+    <path d="M 98 52 C 78 52 64 64 62 82" 
+          stroke="url(#bevelLight)" 
+          stroke-width="2.5" 
+          stroke-linecap="round" 
+          fill="none" />
+
+    <path d="M 68 124 C 94 134 136 142 138 162" 
+          stroke="url(#bevelLight)" 
+          stroke-width="2" 
+          stroke-linecap="round" 
+          fill="none" />
+
+    <!-- Teardrop Gold Finials -->
+    <!-- Top terminal teardrop -->
+    <circle cx="136" cy="85" r="4.5" fill="url(#goldLuxury)" />
+    <circle cx="135" cy="84" r="1.5" fill="#FFFDF7" />
+
+    <!-- Bottom terminal teardrop -->
+    <circle cx="48" cy="164" r="4.5" fill="url(#goldLuxury)" />
+    <circle cx="47" cy="163" r="1.5" fill="#FFFDF7" />
+  </g>
+</svg>

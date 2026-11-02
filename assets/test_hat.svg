@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="goldStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE1A2" />
+      <stop offset="50%" stop-color="#C59B27" />
+      <stop offset="100%" stop-color="#9E6E1D" />
+    </linearGradient>
+  </defs>
+
+  <!-- Clean, Iconic Modern 'S' -->
+  <path d="M 88 56 
+           C 88 42, 74 36, 62 36 
+           C 46 36, 36 46, 36 60 
+           C 36 84, 96 80, 96 108 
+           C 96 124, 82 134, 64 134 
+           C 48 134, 34 124, 34 108"
+        stroke="#121110"
+        stroke-width="11"
+        stroke-linecap="round"
+        fill="none" />
+
+  <!-- Acoustic Waves Tilted to the Right Like a Hat (perched at x=88, y=36, rotated 28 deg) -->
+  <g transform="translate(86, 38) rotate(28)">
+    <!-- Wave 1 (Inner Arc) -->
+    <path d="M -16 -12 C -6 -24 18 -24 28 -12" 
+          stroke="url(#goldStroke)" 
+          stroke-width="4.2" 
+          stroke-linecap="round" 
+          fill="none" />
+
+    <!-- Wave 2 (Middle Arc) -->
+    <path d="M -24 -20 C -10 -36 22 -36 36 -20" 
+          stroke="url(#goldStroke)" 
+          stroke-width="3.5" 
+          stroke-linecap="round" 
+          fill="none" 
+          opacity="0.85" />
+
+    <!-- Wave 3 (Outer Arc) -->
+    <path d="M -32 -28 C -14 -48 26 -48 44 -28" 
+          stroke="url(#goldStroke)" 
+          stroke-width="2.8" 
+          stroke-linecap="round" 
+          fill="none" 
+          opacity="0.6" />
+  </g>
+</svg>

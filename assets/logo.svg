@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Velvet Luxury Cream -->
+    <radialGradient id="luxBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FCFAF7" />
+      <stop offset="70%" stop-color="#F8F5F0" />
+      <stop offset="100%" stop-color="#EDE7DC" />
+    </radialGradient>
+
+    <!-- Master Gold Gradient -->
+    <linearGradient id="hatWaveGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE1A2" />
+      <stop offset="50%" stop-color="#C59B27" />
+      <stop offset="100%" stop-color="#9E6E1D" />
+    </linearGradient>
+
+    <!-- Subtle Drop Shadow -->
+    <filter id="logoShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#121110" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="512" height="512" rx="112" fill="url(#luxBg)" />
+  <rect width="508" height="508" x="2" y="2" rx="110" fill="none" stroke="#D4A346" stroke-width="2" opacity="0.25" />
+
+  <!-- Center Group (Scaled to fit 512x512 canvas) -->
+  <g transform="translate(106, 96) scale(2.0)" filter="url(#logoShadow)">
+    <!-- Clean, Bold, Luxurious 'S' with Rightward Dynamic Tilt -->
+    <path d="M 90 56 C 90 40 76 34 62 34 C 44 34 34 45 34 60 C 34 84 96 80 96 108 C 96 124 82 134 64 134 C 48 134 34 122 34 106"
+          stroke="#121110"
+          stroke-width="11"
+          stroke-linecap="round"
+          fill="none"
+          transform="skewX(-8) translate(12, 0)" />
+
+    <!-- Acoustic Waves Tilted to the Right Like a Hat (perched at x=86, y=38, rotated 28 deg) -->
+    <g transform="translate(86, 38) rotate(28)">
+      <!-- Wave 3 (Outer Arc) -->
+      <path d="M -30 -26 C -12 -46 26 -46 44 -26"
+            stroke="#C99A45"
+            stroke-width="3"
+            stroke-linecap="round"
+            fill="none"
+            opacity="0.65" />
+
+      <!-- Wave 2 (Middle Arc) -->
+      <path d="M -22 -18 C -8 -34 20 -34 34 -18"
+            stroke="url(#hatWaveGold)"
+            stroke-width="3.8"
+            stroke-linecap="round"
+            fill="none"
+            opacity="0.85" />
+
+      <!-- Wave 1 (Inner Arc) -->
+      <path d="M -14 -10 C -4 -22 14 -22 24 -10"
+            stroke="#121110"
+            stroke-width="4.6"
+            stroke-linecap="round"
+            fill="none" />
+    </g>
+  </g>
+</svg>

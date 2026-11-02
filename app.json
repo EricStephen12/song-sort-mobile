@@ -1,13 +1,20 @@
 {
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "Song Sort",
+    "slug": "song-sort",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lmam.songsort",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Song Sort requires microphone access to identify music and hums in real time.",
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        }
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -16,8 +23,21 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
+      "permissions": [
+        "RECORD_AUDIO"
+      ],
       "predictiveBackGestureEnabled": false
     },
+    "plugins": [
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Allow Song Sort to access your microphone to identify songs and hums."
+        }
+      ],
+      "expo-asset",
+      "expo-status-bar"
+    ],
     "web": {
       "favicon": "./assets/favicon.png"
     }
